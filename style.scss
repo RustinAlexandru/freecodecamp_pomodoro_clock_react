@@ -1,0 +1,95 @@
+// @import "bourbon";
+
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
+
+.container {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1D1F20;
+}
+
+#app {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  h2 {
+    color: white;
+    text-align: center
+  }
+  
+  .controls {
+    display: flex;
+    padding: 20px;
+    color:white;
+    font-family: Open Sans, Arial;
+    
+    div {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    
+    .break-length-control, .session-length-control {
+      display: inline;
+      
+      button {
+        background-color: #1D1F20;
+        border: 0;
+        color: white;
+        cursor: pointer;
+        font-size: 2rem;
+        
+      }
+      
+      span {
+        font-size: 2.5rem;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+    
+  }
+  
+  .session {
+        display: flex;
+        justify-content: center;
+
+        .tomato {
+          width: 250px;
+          height: 250px;
+          border: 2.5px solid tomato;
+          border-radius: 45% 45% 60% 60%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+          
+          .session-timer, .session-header {
+            font-size: 3rem;
+            font-family: Open Sans, Ariel;
+            color: white;
+            }
+          }
+    
+          .progress-bar {
+            background-color: tomato;
+            height: 0;
+            z-index: -1;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+          }
+    }
+  }
